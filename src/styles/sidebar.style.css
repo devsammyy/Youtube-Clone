@@ -1,0 +1,59 @@
+#slide__out-menu {
+  position: fixed;
+  width: 350px;
+  /* height: 100vh; */
+  height: 100%;
+  top: 0;
+  left: -400px;
+  background-color: #282828;
+  transition: left 0.2s ease-out;
+  z-index: 1;
+}
+
+.logo__menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  padding: 2rem;
+}
+
+.menu__list {
+  margin: 1.5rem -2rem;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  line-height: 1.4;
+}
+
+.menu nav ul li {
+  width: 100%;
+  /* background-color: red; */
+
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 2.5rem;
+  padding: 1rem;
+  margin-block: -1.5rem;
+  align-items: center;
+}
+.menu nav ul li:hover {
+  background-color: rgba(92, 92, 92, 0.933);
+}
+
+.menu nav ul li h3 {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slide-out {
+  left: 0 !important;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid rgb(55, 55, 55);
+}

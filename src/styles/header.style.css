@@ -1,0 +1,141 @@
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.4rem;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 3rem;
+}
+
+.search,
+.header-hamburger,
+.logo,
+.voice-search {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.header-hamburger {
+  /* width: 50px;
+  height: 50px; */
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+  /* background-color: red; */
+}
+
+.header-hamburger:hover {
+  background-color: rgba(92, 92, 92, 0.933);
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.search {
+  flex-grow: 2;
+  border: 0.5px solid rgba(92, 92, 92, 0.933);
+  border-radius: 20rem;
+  width: min(90%, 50em);
+  padding: 0.8rem;
+  position: relative;
+}
+.search input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0.1rem 2rem;
+  outline: none;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.voice-search {
+  /* flex-grow: 1; */
+  /* width: 50px;
+  height: 50px; */
+  background-color: rgba(36, 36, 36, 0.933);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  padding: 1.5rem;
+}
+.logo {
+  margin-left: 0;
+  gap: 0.5rem;
+  /* background-color: blue; */
+  flex-grow: 2;
+  width: 18em;
+}
+
+.s-btn {
+  background-color: rgba(36, 36, 36, 0.933);
+  padding: 1rem 1.2rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  position: absolute;
+  right: 0;
+  width: 5rem;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.logo h1 {
+  font-size: 30px;
+  text-align: start;
+
+  position: relative;
+}
+
+.logo h1 span {
+  font-size: 14px;
+  position: absolute;
+  font-weight: 200;
+}
+
+@media (max-width: 760px) {
+  body {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .search {
+    display: none;
+  }
+  .voice-search {
+    display: none;
+  }
+
+  header {
+    gap: -1.5rem;
+  }
+
+  nav {
+    justify-self: end;
+  }
+  nav ul {
+    margin-right: -3rem;
+    gap: 2.5rem;
+  }
+  nav ul li:nth-child(1) {
+    display: none;
+  }
+  nav ul li:nth-child(2) {
+    display: none;
+  }
+
+  .s-btn {
+    display: block !important;
+  }
+}
