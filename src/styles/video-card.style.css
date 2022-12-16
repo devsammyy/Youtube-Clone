@@ -54,3 +54,14 @@
   margin-top: -0.2rem;
   line-height: 1.5;
 }
+
+@media screen and (min-width: 55rem) {
+  .card-sections {
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+  .card-container {
+    width: 400px;
+  }
+}

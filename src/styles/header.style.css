@@ -1,10 +1,10 @@
 header {
   width: 100%;
-  height: 50px;
+  height: 80px;
   /* background-color: blue; */
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1rem;
   font-size: 0.7rem;
 }
 
@@ -27,14 +27,12 @@ header {
 
 .search {
   display: none;
-}
-
-.s-btn {
+  position: relative;
 }
 
 .nav-items {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .nav-items li:nth-child(2) {
@@ -43,4 +41,54 @@ header {
 
 .voice-search {
   display: none;
+}
+
+@media screen and (min-width: 55rem) {
+  .nav-items li:nth-child(2) {
+    display: flex;
+  }
+
+  .search {
+    display: flex;
+    width: 100%;
+    min-width: 350px;
+    position: relative;
+  }
+
+  .search input {
+    flex-grow: 1;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    background: transparent;
+    outline: none;
+    border-radius: 1.5rem;
+    border: 1px solid rgb(49, 49, 49);
+  }
+
+  .s-btn {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+  }
+  .sb-btn {
+    display: none;
+  }
+
+  .logo {
+    flex-grow: unset;
+    margin-left: -2rem;
+  }
+
+  header {
+    /* background-color: red; */
+    gap: 3.5rem;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .nav-items {
+    margin-left: auto;
+  }
+  .voice-search {
+    display: flex;
+  }
 }

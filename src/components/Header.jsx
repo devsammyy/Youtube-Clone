@@ -27,9 +27,14 @@ const Header = () => {
         </div>
         <div className="search">
           <input type="text" placeholder="Search" />
+          <FontAwesomeIcon
+            className="s-btn"
+            icon={"fa-solid fa-search"}
+            size={"2x"}
+          />
         </div>
         <FontAwesomeIcon
-          className="s-btn"
+          className="sb-btn"
           icon={"fa-solid fa-search"}
           size={"2x"}
         />
