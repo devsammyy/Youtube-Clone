@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 2rem;
   font-size: 0.5rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .card-sections {

@@ -34,7 +34,7 @@ header {
 
 .nav-items {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .nav-items li:nth-child(2) {
