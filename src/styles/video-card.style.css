@@ -6,7 +6,7 @@
 .card-sections {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 2rem;
   margin-block: 3rem;
 }
