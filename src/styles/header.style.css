@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
-  padding: 1rem 1.4rem;
+  padding: 1rem 1.5rem;
   position: relative;
 }
 nav ul {
@@ -106,10 +106,6 @@ nav ul {
 }
 
 @media (max-width: 760px) {
-  body {
-    width: 95%;
-    margin: 0 auto;
-  }
   .search {
     display: none;
   }
@@ -126,7 +122,7 @@ nav ul {
   }
   nav ul {
     margin-right: -3rem;
-    gap: 2.5rem;
+    gap: -5rem;
   }
   nav ul li:nth-child(1) {
     display: none;
