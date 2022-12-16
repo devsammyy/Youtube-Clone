@@ -12,7 +12,7 @@ body {
   color: rgb(225, 225, 225);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 code {
