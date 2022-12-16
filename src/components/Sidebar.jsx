@@ -10,7 +10,7 @@ const Sidebar = ({ slide, setSlide }) => {
         <div className="hamburger" onClick={() => setSlide(false)}>
           <FontAwesomeIcon icon={"fa-solid fa-bars"} size={"2x"} />
         </div>
-        <div className="logo">
+        <div className="side-bar-logo">
           <FontAwesomeIcon
             icon={"fa-brands fa-youtube"}
             size={"3x"}
@@ -26,42 +26,63 @@ const Sidebar = ({ slide, setSlide }) => {
         </div>
       </div>
       <div className="menu">
-        <nav>
+        <nav className="nav-menu">
           <ul className="menu__list">
-            <li className="menu__list-items-1">
-              <FontAwesomeIcon icon={"fa-solid fa-home"} size={"2x"} />
+            <li className="menu__list-items-1 first">
+              <div className="icon">
+                <FontAwesomeIcon icon={"fa-solid fa-home"} size={"2x"} />
+              </div>
               <h3>Home</h3>
             </li>
-            <li>
-              <FontAwesomeIcon icon={"fa-solid fa-video"} size={"2x"} />
+            <li className="menu__list-items-1">
+              <div className="icon">
+                <FontAwesomeIcon icon={"fa-solid fa-video"} size={"2x"} />
+              </div>
               <h3>Shorts</h3>
             </li>
-            <li>
-              <FontAwesomeIcon icon={"fa-solid fa-rotate"} size={"2x"} />
+            <li className="menu__list-items-1">
+              <div className="icon">
+                <FontAwesomeIcon icon={"fa-solid fa-rotate"} size={"2x"} />
+              </div>
+
               <h3>Subscription</h3>
             </li>
             <hr />
-            <li className="menu__list-items-2">
-              <FontAwesomeIcon icon={"fa-solid fa-file"} size={"2x"} />
+            <li className="menu__list-items-2 second">
+              <div className="icon">
+                <FontAwesomeIcon icon={"fa-solid fa-file"} size={"2x"} />
+              </div>
+
               <h3>Library</h3>
             </li>
-            <li>
-              <FontAwesomeIcon
-                icon={"fa-solid fa-clock-rotate-left"}
-                size={"2x"}
-              />
+            <li className="menu__list-items-2">
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={"fa-solid fa-clock-rotate-left"}
+                  size={"2x"}
+                />
+              </div>
+
               <h3>History</h3>
             </li>
-            <li>
-              <FontAwesomeIcon icon={"fa-solid fa-photo-film"} size={"2x"} />
+            <li className="menu__list-items-2">
+              <div className="icon">
+                <FontAwesomeIcon icon={"fa-solid fa-photo-film"} size={"2x"} />
+              </div>
               <h3>Your videos</h3>
             </li>
-            <li>
-              <FontAwesomeIcon icon={"fa-solid fa-clock"} size={"2x"} />
+            <li className="menu__list-items-2">
+              <div className="icon">
+                <FontAwesomeIcon icon={"fa-solid fa-clock"} size={"2x"} />
+              </div>
+
               <h3>Watch later</h3>
             </li>
-            <li>
-              <FontAwesomeIcon icon={"fa-solid fa-thumbs-up"} size={"2x"} />
+            <li className="menu__list-items-2">
+              <div className="icon">
+                <FontAwesomeIcon icon={"fa-solid fa-thumbs-up"} size={"2x"} />
+              </div>
+
               <h3>Liked videos</h3>
             </li>
           </ul>
